@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/neipo13/fcc_request_parser/issues"
   },
-  "homepage": "https://github.com/neipo13/fcc_request_parser#readme"
+  "homepage": "https://github.com/neipo13/fcc_request_parser#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
