@@ -16,8 +16,13 @@ app.get('/', function(req, res){
 });
 
 app.use(function(err, req, res, next){
-   res.status(500).send(err); 
+    res.status(err.status || 500);
+    res.render('error', {
+        message: err.message, 
+        error: err
+    });
 });
+
 app.listen(process.env.PORT || 8080, function(){
     console.log('listening on 8080');
 });
