@@ -5,7 +5,6 @@ app.get('/', function(req, res){
     var userAgent = req.headers['user-agent'];
     var ip = req.ip || req.headers["accept-language"] || req.connection.remoteAddress;
     var lang = req.acceptedLanguages[0];
-    //var firstParen = userAgent.indexOf('(');
     var soft = userAgent.substring(userAgent.indexOf('(') + 1, userAgent.indexOf(')'));
     var ret = {
         "ipaddress": ip,
@@ -16,7 +15,7 @@ app.get('/', function(req, res){
 });
 
 app.use(function(err, req, res, next){
-    res.send(err.message);
+    err.status(500).send(err);
 });
 
 app.listen(process.env.PORT || 8080, function(){
