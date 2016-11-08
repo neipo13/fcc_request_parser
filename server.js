@@ -4,7 +4,7 @@ const app = express();
 app.get('/', function(req, res){
     var userAgent = req.headers['user-agent'];
     var ip = req.ip || req.headers["accept-language"] || req.connection.remoteAddress;
-    var lang = req.acceptedLanguages[0];
+    var lang = req.acceptedLanguages[0] || req.headers["accept-language"];
     var soft = userAgent.substring(userAgent.indexOf('(') + 1, userAgent.indexOf(')'));
     var ret = {
         "ipaddress": ip,
