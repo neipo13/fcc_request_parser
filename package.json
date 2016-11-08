@@ -1,0 +1,19 @@
+{
+  "name": "request_parser",
+  "version": "1.0.0",
+  "description": "free code camp parser of user-agent",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neipo13/fcc_request_parser.git"
+  },
+  "author": "Andrew Napierkowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neipo13/fcc_request_parser/issues"
+  },
+  "homepage": "https://github.com/neipo13/fcc_request_parser#readme"
+}
