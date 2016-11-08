@@ -14,11 +14,6 @@ app.get('/', function(req, res){
     res.send(ret);
 });
 
-app.use(function(err, req, res, next){
-    err.status(500).send(err);
-    res.send(err);
-});
-
 app.listen(process.env.PORT || 8080, function(){
     console.log('listening on 8080');
 });
