@@ -6,15 +6,8 @@
   "scripts": {
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/neipo13/fcc_request_parser.git"
-  },
   "author": "Andrew Napierkowski",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/neipo13/fcc_request_parser/issues"
-  },
   "homepage": "https://github.com/neipo13/fcc_request_parser#readme",
   "dependencies": {
     "express": "^4.14.0"
