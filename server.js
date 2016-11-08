@@ -1,12 +1,5 @@
 const express = require('express');
-const app = express();
-
-var first =  function(array) {  
-      if (array == null){
-        return null;
-      } 
-      return array[0];  
-  };  
+const app = express(); 
 
 app.get('/', function(req, res){
     var userAgent = req.headers['user-agent'];
