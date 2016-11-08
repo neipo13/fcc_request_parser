@@ -16,6 +16,7 @@ app.get('/', function(req, res){
 
 app.use(function(err, req, res, next){
     err.status(500).send(err);
+    res.send(err);
 });
 
 app.listen(process.env.PORT || 8080, function(){
